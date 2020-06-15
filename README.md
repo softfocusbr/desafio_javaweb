@@ -18,8 +18,9 @@
 
 **Esse projeto tem as seguintes características atualmente (mais a título de informação, pois, não será necessário ter conhecimento avançado sobre tudo isso).**
 - Controle de dependências: Maven.
-- Servidor: Apache Tomcat 7.
-- Banco de Dados: PostgreSQL.
+- Servidor: Apache Tomcat.
+- Banco de Dados: H2.
+- Migração de banco: Flyway
 - Testes automatizados: JUnit.
 - Controle de versão do código fonte: GitHub.
 
