@@ -2,6 +2,7 @@ package controller.produto.action;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,7 +20,7 @@ public class IncluirProduto extends HttpServlet {
 			String n = request.getParameter("nome");
 			Integer cd = 0;
 			String categoria = request.getParameter("categoria");
-			
+
 			if (DAOProduto.isNomeProdutoValido(n, cd)) {
 				DAOProduto.incluirProduto(n, Integer.parseInt(categoria), request.getParameter("descricao"));
 			} else {
