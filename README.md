@@ -1,6 +1,6 @@
-# **Bem vindo ao Projeto Java Web!**
+# **Bem vindo(a) ao Projeto Java Web!**
 
-# O desafio técnico será baseado em um projeto JavaWeb (Servlets e JSPs) existente, nesse projeto já possui um cadastro de Produtos funcionando (listagem, inclusão, alteração e exclusão). 
+## O desafio técnico será baseado em um projeto JavaWeb (Servlets e JSPs) existente, nesse projeto já possui um cadastro de Produtos funcionando (listagem, inclusão, alteração e exclusão). 
 
 ## Antes de iniciar é importante lembrar que, é melhor terminar uma atividade de forma bem feita do que fazer todas pela metade.
 
