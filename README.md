@@ -29,5 +29,5 @@
 * Criar testes automatizados
 * Fazer melhorias visuais
 
-No momento de realizar o desafio, solicite acesso aos Requisitos que estão [aqui](https://docs.google.com/document/d/1eYuFpsZWTtm4EYxJyrfXewJG9bJoiZl4Iv21chzFFTs/)
+No momento de realizar o desafio, solicite acesso aos Requisitos que estão [aqui](https://drive.google.com/file/d/1EmkxIQd6gxv5uEJ-lt4LCZIqae2bqNoB/view)
 
