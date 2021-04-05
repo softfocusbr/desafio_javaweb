@@ -1,24 +1,20 @@
 package controller.produto.action;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.Connection;
+import model.produto.DAOProduto;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
-import model.produto.DAOProduto;
-
-@SuppressWarnings("serial")
 public class IncluirProduto extends HttpServlet {
 
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		try {
 			String n = request.getParameter("nome");
-			Integer cd = 0;
+			int cd = 0;
 			String categoria = request.getParameter("categoria");
 
 			if (DAOProduto.isNomeProdutoValido(n, cd)) {

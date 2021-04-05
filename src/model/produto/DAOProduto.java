@@ -26,7 +26,7 @@ public class DAOProduto {
 		String sql = "select * from produtos";
 		ResultSet rs = Conexao.getStatement().executeQuery(sql);
 
-		ArrayList<Produto> lista = new ArrayList<Produto>();
+		ArrayList<Produto> lista = new ArrayList<>();
 
 		while (rs.next()) {
 			Produto p = new Produto();

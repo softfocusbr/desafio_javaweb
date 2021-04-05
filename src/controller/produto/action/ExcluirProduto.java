@@ -1,23 +1,20 @@
 package controller.produto.action;
 
-import java.io.IOException;
-import java.io.PrintWriter;
+import model.produto.DAOProduto;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
-import model.produto.DAOProduto;
-
-@SuppressWarnings("serial")
 public class ExcluirProduto extends HttpServlet {
 
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		try {
 			String codigo = request.getParameter("codigo");
-			Integer cdInt = Integer.parseInt(codigo);
+			int cdInt = Integer.parseInt(codigo);
 			
 			DAOProduto.excluirProduto(cdInt);
 			response.setContentType("text/html; charset=iso-8859-1;");
