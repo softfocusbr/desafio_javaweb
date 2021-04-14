@@ -25,12 +25,19 @@ public class Conexao {
 	}
 
 	public static void migrarBanco() {
-        Flyway flyway = Flyway.configure()
-            .dataSource(url, usuario, senha)
-            .outOfOrder(true)
-            .baselineOnMigrate(true)
-            .ignoreFutureMigrations(false)
-            .load();
-        flyway.migrate();
+		try {
+			Flyway flyway = Flyway.configure()
+					.dataSource(url, usuario, senha)
+					.outOfOrder(true)
+					.baselineOnMigrate(true)
+					.ignoreFutureMigrations(false)
+					.ignoreMissingMigrations(true)
+					.load();
+			flyway.migrate();
+		} catch (Exception e) {
+			System.out.println("** ERRO NA MIGRACAO DE BANCO DE DADOS **");
+			e.printStackTrace();
+			System.exit(0);
+		}
     }
 }
